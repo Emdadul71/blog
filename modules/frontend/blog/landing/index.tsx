@@ -81,23 +81,22 @@ const BlogLanding = () => {
       {data && <BlogHero data={data} />}
       <section className="pt-5 lg:pt-[80px]">
         <div className="container">
-          <div className="grid md:grid-cols-[160px_1fr_250px] gap-[30px]">
-            <AdvertisementLeftSide className="mt-16 sticky top-[80px]" />
+          <div className="grid md:grid-cols-[1fr_320px] gap-[50px]">
             {data && (
               <div>
                 <LatestBlog />
               </div>
             )}
             <div className="sticky top-[80px] self-start">
-              <AdvertisementSideSm />
-              <div className="flex flex-col gap-3">
+              <AdvertisementSideSm className="mt-[72px] flex items-center" />
+              <div className="flex flex-col gap-4">
                 {data?.slice(0, 5)?.map((item: any, i: any) => {
                   return (
                     <BlogCard
                       key={i}
                       data={item}
                       classes={{
-                        root: "grid-cols-2",
+                        root: "grid-cols-[110px_1fr] !gap-3",
                         imageWrapper: "!h-[62px]",
                         imageStyle: "!h-full",
                         title: "text-sm !mb-1",
@@ -109,7 +108,7 @@ const BlogLanding = () => {
                   );
                 })}
               </div>
-              <AdvertisementSideSm className="mt-8" />
+              <AdvertisementSideSm className="mt-8 flex items-center" />
             </div>
           </div>
         </div>
