@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "Latest",
+    "link": "/latest"
+  },
+  {
+    "title": "News",
+    "link": "/news"
+  },
+
+  {
+    "title": "Contact Us",
+    "link": "/contact-us"
+  }
+]
