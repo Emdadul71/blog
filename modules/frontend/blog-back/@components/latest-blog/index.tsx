@@ -1,5 +1,5 @@
 import API from "@/helpers/api";
-import BlogCard from "@/modules/frontend/@common/blog-card";
+import BlogCard from "@/modules/frontend/@common/blog_card";
 import React, { useEffect, useState } from "react";
 
 const data = [
